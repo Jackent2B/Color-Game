@@ -1,0 +1,90 @@
+body{
+	background-color: #232323;
+	margin: 0;
+	font-family: 'Merriweather', cursive;
+}
+.square{
+	width: 30%;
+	background: purple;
+	padding-bottom: 30%; 
+	float:left;
+	margin:1.5%;
+	 /*to get the rounded corners of squares , we use border radius*/
+	border-radius: 15%;
+	transition: background 0.4s; 
+	/*As here we only wanted to apply this effect to the background property therefore background is used instead of all */
+	-webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	/*these upper two property are only used because transition effect does not work with all browsers*/
+}
+#container{
+	margin:20px auto;
+	width:50%;
+}
+h1{
+	color: white;
+	text-align: center;
+	/*to reduce space between the great and rgb we use line height*/
+	line-height: 1.2;
+	background-color: steelblue;
+	margin: 0;
+	font-weight: normal; 
+	text-transform: uppercase;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	letter-spacing: 1px; 
+}
+style{
+	background: #232323;
+}
+#content{
+	color: steelblue;
+	text-transform: uppercase;
+}
+#stripe{
+	background: white;
+	text-align: center;
+	height: 25px
+}
+.selected{
+	background-color: steelblue;
+	color: white;
+}
+#span{
+	font-size: 200%;
+} 
+#content{
+	display: inline-block;
+	width: 20%;
+}
+button{
+	border: none;
+	background: none;
+	text-transform: uppercase;
+/*height is used to completly occupy the space of strip*/
+	height: 100%;
+	color: steelblue;
+	font-weight: 700; 
+	letter-spacing: 1px;
+	 font-size: inherit;
+/*transition property is used to to get the transition effect when we hover over buttons*/
+	 transition: all 0.4s; /*here all is used to apply this effect to all the properties present in the button */
+	 -webkit-transition: background 0.4s;
+	-moz-transition: background 0.4s;
+	/*these upper two property are only used because transition effect does not work with all browsers*/ 
+	outline: none;
+	/*It is used to get rid of that outline appears at the end when we click the button*/
+}
+#button:hover{
+	background-color: steelblue;
+	color: white; 
+}
+#easy:hover{
+	background-color: steelblue;
+	color: white; 
+
+}
+#hard:hover{
+	background-color: steelblue;
+	color: white; 
+}
